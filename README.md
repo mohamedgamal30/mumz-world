@@ -58,6 +58,10 @@ The Weather Wrapper API is a production-ready NestJS application that wraps a th
 6. **For Testing:**
     `npm run test`
 
+## Swagger Documentation
+
+- **URL:** `http://localhost:3000/docs`
+
 ## Usage
 
 ### Authentication
@@ -126,7 +130,3 @@ Use a GraphQL client or the Playground at `http://localhost:3000/graphql` (if 
 
 - A scheduled job runs periodically (e.g., 1 hr) to refresh cached weather data for all locations. This keeps frequently requested data warm and up-to-date.
 - It updates the DB and Redis.
-
-### Swagger Documentation
-
-- **URL:** `http://localhost:3000/docs`
