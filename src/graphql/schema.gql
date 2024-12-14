@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type WeatherType {
+  city: String!
+  temperature: Float!
+  description: String!
+}
+
+type ForecastItemType {
+  date: String!
+  temperature: Float!
+  description: String!
+}
+
+type LocationType {
+  id: Int!
+  city: String!
+  userId: Int!
+}
+
+type Query {
+  currentWeather(city: String!): WeatherType!
+  forecast(city: String!): [ForecastItemType!]!
+  favoriteLocations: [LocationType!]!
+}
+
+type Mutation {
+  addFavoriteLocation(city: String!): LocationType!
+  removeFavoriteLocation(id: Int!): Boolean!
+}
