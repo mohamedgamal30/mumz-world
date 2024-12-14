@@ -11,6 +11,8 @@ export class AuthController {
   @Post('login')
   @ApiOperation({ summary: 'Register a new user' })
   @ApiBody({ type: UserDto })
+  @ApiResponse({ status: 201, description: 'User successfully logged in.' })
+  @ApiResponse({ status: 401, description: 'User entered invalid credentials.' })
   async login(@Body() body: UserDto) {
     return this.authService.login(body);
   }
