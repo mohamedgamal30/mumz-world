@@ -1,19 +1,7 @@
 # Weather Wrapper API
 
 **Description:**  
-The Weather Wrapper API is a production-ready NestJS application that wraps a third-party weather API (OpenWeatherMap) to provide current weather, 5-day forecasts, and user-managed favorite locations. It supports REST and GraphQL, implements caching, rate limiting, authentication, logging, and includes a background job to periodically update cached data. This repository demonstrates best practices in NestJS architecture, testing, and error handling.
-
-## Features
-
-- **Weather Endpoints:** Retrieve current weather and 5-day forecasts for any city.
-- **Favorite Locations:** Authenticated users can add, list, and remove favorite locations stored in a PostgreSQL database.
-- **GraphQL Support:** Query weather and favorite locations via GraphQL queries and mutations.
-- **Caching & Rate Limiting:** Cache responses to reduce external API calls and apply rate limiting to avoid abuse.
-- **Robust Error Handling:** Comprehensive try/catch, HTTP exceptions, and global exception filters ensure consistent error responses.
-- **Authentication (JWT):** Secure endpoints for managing favorite locations.
-- **Background Jobs:** Periodically refresh cached weather data for favorite locations.
-- **Comprehensive Logging & Swagger Documentation:** Detailed request logging and professional-grade Swagger UI documentation.
-- **Testing:** Thorough unit tests with Jest for core services, ensuring 100% coverage for critical components.
+The Weather Wrapper API is a production-ready NestJS application that wraps a third-party weather API (OpenWeatherMap) to provide current weather, 5-day forecasts, and user-managed favorite locations. It supports REST and GraphQL, implements caching, rate limiting, authentication, logging, and includes a background job to periodically update cached data.
 
 ## Quick Start
 
@@ -28,7 +16,7 @@ The Weather Wrapper API is a production-ready NestJS application that wraps a th
 
 1. **Clone the repository:**
     
-    `git clone <REPOSITORY_URL> cd weather-wrapper`
+    `git clone <REPOSITORY_URL> cd mumz-world`
     
 2. **Install Dependencies:**
     
@@ -66,6 +54,9 @@ The Weather Wrapper API is a production-ready NestJS application that wraps a th
     `npm run start:dev`
     
     The server will run at `http://localhost:3000`.
+
+6. **For Testing:**
+    `npm run test`
 
 ## Usage
 
