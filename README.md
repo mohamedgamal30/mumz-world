@@ -58,9 +58,11 @@ The Weather Wrapper API is a production-ready NestJS application that wraps a th
 6. **For Testing:**
     `npm run test`
 
+
 ## Swagger Documentation
 
 - **URL:** `http://localhost:3000/docs`
+
 
 ## Usage
 
@@ -69,12 +71,12 @@ The Weather Wrapper API is a production-ready NestJS application that wraps a th
 - **Register**:
 
 	- `POST /auth/register`
-		- Request Body: 
+		- Request Body: `{ "username": "test", "password": "StrongP@ssw0rd" }`
 `
 - **Login:**
     
     - `POST /auth/login`
-	    - Request Body: `{ "username": "test", "password": "test" }`
+	    - Request Body: `{ "username": "test", "password": "StrongP@ssw0rd" }`
 	    - Response: `{ "access_token": "<JWT_TOKEN>" }`
     
     Use `Authorization: Bearer <JWT_TOKEN>` for protected endpoints (e.g., favorite locations).
